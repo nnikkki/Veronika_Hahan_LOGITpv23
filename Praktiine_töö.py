@@ -22,7 +22,7 @@ try:
              print("Tugev rasvumine")
         elif indeks>40:
              print("Tervisele ohtlik rasvumine ")
-        else :  
+        else :   
             print("Viga")
     else :
         print("Kahju! See on väga kasulik info!")
