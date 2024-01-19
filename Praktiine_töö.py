@@ -26,7 +26,7 @@ try:
             print("Viga")
     else :
         print("Kahju! See on väga kasulik info!")
-        print("\n") 
+        print("\n")  
 except:
     print("Viga")
 
