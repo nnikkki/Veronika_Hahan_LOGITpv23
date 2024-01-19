@@ -2,30 +2,34 @@ print("Tere! Olen sinu uus sõber - Python!")
 nimi=input("Mis on sinu nimi? ").capitalize() 
 print(nimi, "oi, kui ilus nimi!")
 vastus=input(nimi + "! Kas leian Sinu keha indeksi? 0-ei, 1-jah => ")
-if vastus=="1":
-    pikkus=int(input(" pikkus: " ))
-    mass=float(input("mass:  "))
-    indeks=mass/(0.01*pikkus)**2
-    print(nimi, "! Sinu keha indeks on {:.1f}".format(indeks))
-    if indeks<16:
-        print("Tervisele ohtlik alakaal")
-    elif 16<indeks<19:
-        print("Alakaal")
-    elif 19<indeks<25:
-        print("Normaalkaal")
-    elif 25<indeks<30:
-        print("Ülekaal")
-    elif 30<indeks<35:
-        print("Rasvumine")
-    elif 35<indeks<40:
-        print("Tugev rasvumine")
-    elif indeks>40:
-        print("Tervisele ohtlik rasvumine ")
-    else:
-        print("Viga")
-else:
-    print("Kahju! See on väga kasulik info!")
-    print("\n") 
+try:
+    if vastus=="1":
+        pikkus=int(input(" pikkus: " ))
+        mass=float(input("mass:  "))
+        indeks=mass/(0.01*pikkus)**2
+        print(nimi, "! Sinu keha indeks on {round, 1}".format(indeks))
+        if indeks<16:
+             print("Tervisele ohtlik alakaal")
+        elif 16<indeks<19:
+             print("Alakaal")
+        elif 19<indeks<25:
+             print("Normaalkaal")
+        elif 25<indeks<30:
+             print("Ülekaal")
+        elif 30<indeks<35:
+             print("Rasvumine")
+        elif 35<indeks<40:
+             print("Tugev rasvumine")
+        elif indeks>40:
+             print("Tervisele ohtlik rasvumine ")
+        else :
+            print("Viga")
+    else :
+        print("Kahju! See on väga kasulik info!")
+        print("\n") 
+except:
+    print("Viga")
+
 
 
 #from random import *
