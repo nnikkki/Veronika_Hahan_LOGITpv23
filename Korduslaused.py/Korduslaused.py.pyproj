@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>c9143734-7d28-49cc-a305-250eac7dc29a</ProjectGuid>
+    <ProjectGuid>f4dc9d6e-b147-4775-aab5-b87158ea78ef</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>class1.py</StartupFile>
+    <StartupFile>Korduslaused.py.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>Veronika_LOGITpv23</Name>
-    <RootNamespace>Veronika_LOGITpv23</RootNamespace>
+    <Name>Korduslaused.py</Name>
+    <RootNamespace>Korduslaused.py</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,11 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="class1.py" />
-    <Compile Include="Praktiine_töö.py" />
-    <Compile Include="Valik_laused.py" />
-    <Compile Include="Veronika_LOGITpv23.py" />
-    <Compile Include="Vigade_otsing.py" />
+    <Compile Include="Korduslaused.py.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
