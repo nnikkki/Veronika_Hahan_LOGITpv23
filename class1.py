@@ -1,11 +1,48 @@
 from datetime import *
 from random import*
+#3
+k=0
+while True:
+    k+=1
+    num1=randint(1, 50)
+    num2=randint(1, 50)
+    p=0
+    v=0
+    while p!=5:
+        p+=1
+        v=int(input("Millega võrdub {0}+{1}".format(num1,num2)))
+        if v==num1+num2:
+            print("Tubli")
+            break
+        else:
+            print("Mõtle veel!")
+    print("{0}+{1}={2}".format(num1,num2,num1+num2))
+
+
+    if k==5: break
+
+
+
+
+
+
 #2
- summa=0
- for i in range(10):
+summa=0
+for i in range(10):
      arv=float(input("Sisesta arv: "))
      summa+=arv
- print(summa)
+print(summa)
+
+
+summa=0
+i=0
+while True:
+    i+=1
+    arv=float(input("Sisesta arv: "))
+    summa+=arv
+    if i==10: break
+print(summa)
+
 
 #1
 nimi=input("Mis on sinu nimi?").capitalize()
