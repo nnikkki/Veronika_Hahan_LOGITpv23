@@ -35,7 +35,7 @@ a==0
 while a>0:
     number=a%10
     a=a//10
-    a=a*10
+    a=a*10  
     a=+number
 print("*Перевёрнутое* число", a)
 print()
