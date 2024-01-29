@@ -184,7 +184,7 @@ print(summa)
 
 summa=0
 i=0
-while True:
+while True: 
    i+=1
    arv=float(input("Sisesta arv: "))
    summa+=arv
