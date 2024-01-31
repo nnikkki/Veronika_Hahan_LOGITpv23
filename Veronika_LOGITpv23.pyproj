@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c9143734-7d28-49cc-a305-250eac7dc29a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>class1.py</StartupFile>
+    <StartupFile>контрольная.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,6 +26,9 @@
     <Compile Include="Valik_laused.py" />
     <Compile Include="Veronika_LOGITpv23.py" />
     <Compile Include="Vigade_otsing.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="контрольная.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

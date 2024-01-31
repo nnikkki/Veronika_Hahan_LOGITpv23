@@ -182,7 +182,7 @@ for i in range(10):
 print(summa)
 
 
-summa=0
+summa=0 
 i=0
 while True: 
    i+=1
