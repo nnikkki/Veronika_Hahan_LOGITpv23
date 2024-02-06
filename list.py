@@ -23,7 +23,7 @@ while True:
                     if indeks>0 and indeks<len(nimed):
                        break
                     else:
-                        print("On vaja arv suurem kui 0")
+                        print("On vaja arv suurem kui 0 ja väiksem kui elementide kogus")
                 except:
                     print("Viga")           
             nimi=input("Mis nimi: ")
@@ -42,28 +42,27 @@ while True:
                             nimed.remove(nimi)
                     else:
                         print(f"Nimi {nimi} ei ole nimekirjas")
-                elif valik=="indeksi":
-                    indeks=int(input("Mis in järjekordne number? "))
+        else:
+            indeks=int(input("Mis on järjekorranumber?"))
                     nimed.pop(indeks-1) 
-                else:
-                    print("Vale valik! Kirjuta (nimi) või (indeksi)")
-            except:
-                print("Viga") 
     elif valik=="show":
         print(nimed)
     elif valik=="rev":
-        print(nimed.reverse())
+        nimed.reverse()
+        print(nimed)
     elif valik=="sort":
-        print(nimed.sort())
+        nimed.sort()
+        print(nimed)
     elif valik=="clear":
-        print(nimed.clear())
+        nimed.clear()
+        print(nimed)
     elif valik=="ots":
         ind=-1
-        nimi=input("Mis nimi otsime? ")
+        nimi=input("Mis nime otsime? ")
         if nimed.count(nimi)>0:
             for nim in nimed:
+                if nim==nimi:
                 ind=nimed.index(nimi,ind+1)
                 print(f"{nimi} on indeksiga {ind}")
         else:
-            print(f"{nimi} on indeksiga {ind+1}")
-    
+            print(f"{nimi} ei ole nimekirjas")
