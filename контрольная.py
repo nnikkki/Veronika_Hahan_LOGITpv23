@@ -5,7 +5,7 @@ while True:
        if 1<mitu<10:
            break
    except ValueError:
-       print("Vale tüüp")
+       print("Vale tüüp")    
 for i in range(mitu):
    print(' Ä '.center(10, ' ' ), end="")
 print()
