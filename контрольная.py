@@ -1,69 +1,77 @@
+#1
+while True:
+   try:
+       mitu=int(input("Mitu tk:  "))
+       if 1<mitu<10:
+           break
+   except ValueError:
+       print("Vale tüüp")
+for i in range(mitu):
+   print(' Ä '.center(10, ' ' ), end="")
+print()
+for i in range(mitu):
+   print(' / \ '.center(10, ' ' ), end="")
+print()
+for i in range(mitu):
+   print(' | |  '.center(10, ' ' ), end="")
+print()
+for i in range(mitu):
+   print('__'.center(10, ' ' ), end="")
+print()
+
+#2
+from random import *
+
+for i in range(5):
+  try:
+      N=int(input("Kulutused:  "))
+  except ValueError:
+     print("Vale tüüp")  
+aasta_kulud=0
+arv_kulutamine=0
+for i in range(12):
+   for i in range(5):
+       kulutamine=randint(100,1000)
+       aasta_kulud+=kulutamine
+       arv_kulutamine+=1
+keskmine_summa=aasta_kulud/arv_kulutamine
+print("Keskmine kulutatud summa aastas: "+str(keskmine_summa))
+
+#3
+from random import *
+try:
+   M=float(input("Kangatüki pikkus meetrites: "))
+   while M>0:
+       pikkus=randint(0,int(M))
+       M -=pikkus
+       print("Ülejäänud kangast: "+str(M))
+   print("Kangas sai otsa")
+except ValueError:
+   print("Viga!")
+
+#4
+from random import *
+L=int(input("Sisestage maatriksi laius: "))
+H=int(input("Sisestage maatriksi pikkus: "))
+for i in range(L):
+   for i in range(H):
+       arv=randint(0,100)
+       print(arv, end=" ")
+   print()
+
+#5
+from random import *
+A=float(input("Kogu palk: "))
+tõõtajad=int(input("Tõõtajate arv: "))
+arvutama=0
+for i in range(tõõtajad):
+    palk=randint(600,2000)
+    pensionär=randint(0,5)
+    if palk>A and pensionär==1:
+        arvutama+=1
+if arvutama>0:
+    print("Suurema palgaga töötajad: "+ str(A), "eurot ja on pensionäridele: "+str(arvutama))
+else:
+    print("Kõigeima palgaga töötajaid pole!")
 
 
-
-#2.2
-L=int(input("Введите значение L: "))
-сумма=0
-for число in range(L + 1):
-    сумма+=число
-print(f"Сумма числового ряда от 0 до {L} включительно: {сумма}")
-
-
-#2.5
-число=int(input("Введите целое число: "))
-строка_числа=str(число)
-сумма_цифр=0
-произведение_цифр=1
-for цифра in строка_числа:
-    цифра=int(цифра)
-    сумма_цифр+=цифра
-    произведение_цифр*=цифра
-print(f"Сумма цифр: {сумма_цифр}")
-print(f"Произведение цифр: {произведение_цифр}")
-
-
-#1.1
-
-
-
-#1.2
-R=int(input("Введите число R: "))
-произведение = 1
-for число in range(1, R + 1, 2):
-    произведение*=число
-print(f"Произведение всех нечетных значений от 0 до {R}: {произведение}")
-
-
-#1.3
-import random
-M=random.randint(1,100)
-summ=0
-for i in range (1,M):
-    N=random.randint(-10,10)
-    print(N)
-    if N>0:
-        summ+=1
-print("кол-во положительных:",summ)
-
-#1.4
-число=int(input("Введите натуральное число: "))
-четные=0
-нечетные=0
-while число>0:
-    цифра=число%10
-    if цифра%2==0:
-        четные+=1
-    else:
-        нечетные+=1
-    число//=10
-print(f"Четные цифры: {четные}")
-print(f"Нечетные цифры: {нечетные}")
-
-
-#1.5
-A=int(input("Введите значение A: "))
-B=int(input("Введите значение B: "))
-сумма=0
-for число in range(A, B + 1):
-    сумма+=число
-print(f"Сумма чисел от {A} до {B} равна: {сумма}")
