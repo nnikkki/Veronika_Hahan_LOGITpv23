@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c9143734-7d28-49cc-a305-250eac7dc29a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>контрольная.py</StartupFile>
+    <StartupFile>praktiine.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="class1.py" />
+    <Compile Include="praktiine.py" />
     <Compile Include="Praktiine_töö.py" />
     <Compile Include="Valik_laused.py" />
     <Compile Include="Veronika_LOGITpv23.py" />
