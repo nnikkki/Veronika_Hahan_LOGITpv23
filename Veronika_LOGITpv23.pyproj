@@ -22,6 +22,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="class1.py" />
+    <Compile Include="def.py" />
+    <Compile Include="kasutamineF.py" />
+    <Compile Include="MinuOmaModul.py" />
     <Compile Include="praktiine.py" />
     <Compile Include="Praktiine_töö.py" />
     <Compile Include="Valik_laused.py" />
