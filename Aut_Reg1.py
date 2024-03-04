@@ -19,5 +19,5 @@ while True:
         print("lõpetamine")
         break
     else:
-        print("Tundmatu valik")
+        print("Tundmatu valik")  
 
