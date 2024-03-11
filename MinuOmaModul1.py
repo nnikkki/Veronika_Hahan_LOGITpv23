@@ -1,6 +1,8 @@
+from math import radians
 from pickle import FALSE
 from string import *
 from time import sleep
+from os import path, remove
 def registreerimine(kasutajad:list,paroolid:list,koodi:list)->any:
     """Funktsioon tagastab kasutajad ja paroolid
     :param list kasutajad: kasutajad nimed list
@@ -71,7 +73,7 @@ def autoriseerimine(kasutajad:list,paroolid:list):
             break
         else:
              print("Kasutajat pole")
-  
+ 
 
 def nime_või_parooli_muutmine(list_:list):
     """Funktsioon võimaldab kasutajal muuta oma kasutajanime või parooli.
@@ -106,3 +108,39 @@ def unustanud_üarooli_taastamine(kasutajad:list,paroolid:list,koodi:list):
             print("Parooli taastamine tühistatud.")
     else:
         print("Sellise kasutajanimega kasutajat ei leitud.")
+def loe_failist(fail:str)->list:
+    """Funktsioon loeb tekst *.txt failist
+    """
+ 
+    f=open(fail,"r",encoding="utf-8")
+    järjend=[]
+    for rida in f:
+         järjend.append(rida.strip())
+    f.close()
+    return järjend 
+def kirjuta_failisse(fail:str,järjend=[]):
+    """Salvestame tekst failisse
+    """
+    n=int(input("Mitu: "))
+    for i in range(n):
+        järjend.append(input(f"{i+1}. sõna: "))
+    f=open(fail,"a",encoding="utf-8")
+    for element in järjend:
+        f.write(element+"\n")
+    f.close()
+def ümber_kirjuta_fail(fail:str):
+    """
+    """
+    f=open(fail,"w")
+    text=input("Sisesta tekst:")
+    f.write(text+"\n")
+    f.close()
+def failide_kustamine():
+    """
+    """
+    failinimi=input("Mis fail tahad eemaldada? ")
+    if path.isfile(failinimi):
+        remove(failinimi)
+        print(f"Fail {failinimi} oli kustutatud")
+    else:
+        print(f"Fail {failinimi} puudubh")

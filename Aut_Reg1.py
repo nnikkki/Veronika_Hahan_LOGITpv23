@@ -1,7 +1,7 @@
 from MinuOmaModul1 import *
-koodi_sõna=["koodi.1"]
-salasõnad=["Parool.1"]
-kasutajanimed=["Kasutajanimed.1"]
+koodi_sõna=loe_failist("Salasõna.txt")
+salasõnad=loe_failist("Salasõna.txt")
+kasutajanimed=loe_failist("Kasutajanimed.txt")
 while True:
     print(kasutajanimed)
     print(salasõnad)

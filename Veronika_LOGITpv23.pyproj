@@ -29,11 +29,14 @@
     <Compile Include="MinuOmaModul1.py" />
     <Compile Include="praktiine.py" />
     <Compile Include="Praktiine_töö.py" />
+    <Compile Include="Too_failidega.py" />
     <Compile Include="Valik_laused.py" />
     <Compile Include="Veronika_LOGITpv23.py" />
     <Compile Include="Vigade_otsing.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Päevad1.txt" />
+    <Content Include="Tekst.txt" />
     <Content Include="контрольная.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
