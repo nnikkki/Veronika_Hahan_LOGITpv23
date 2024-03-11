@@ -35,8 +35,8 @@
     <Compile Include="Vigade_otsing.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Päevad1.txt" />
-    <Content Include="Tekst.txt" />
+    <Content Include="Salasõna.txt" />
+    <Content Include="Kasutajanimed.txt" />
     <Content Include="контрольная.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
