@@ -1,38 +1,35 @@
 from MinuOmaModul1 import *
-koodi_sõna=loe_failist("Koodi_sõna.txt")
-salasõnad=loe_failist("Salasõna.txt")
-kasutajanimed=loe_failist("Kasutajanimed.txt")
+
+salasõnad=loe_failist("Salasõnad.txt")
+kasutajanimed=loe_failist("Kasutajad.txt")
 while True:
     print(kasutajanimed)
     print(salasõnad)
-    print(koodi_sõna)
-    print("1-registreerimine\n2-autoriseerimine\n3-nime või parooli muutmine\n4-unustanud üarooli taastamine\n5-lõpetamine")
-    vastus=int(input("Sisestage arv "))
+    print("1-registreerimine\n2-autoriseerimine\n3-nime või parooli muutmine\n4-unustanud parooli taastamine\n5-lõpetamine\n")
+    vastus=int(input("Sisestage arv"))
     if vastus==1:
-        print("registreerimine")
-        kasutajanimed,salasõnad,koodi_sõna=registreerimine(kasutajanimed,salasõnad,koodi_sõna)
+        print("Registreerimine")
+        kasutajanimed,salasõnad=registreerimine(kasutajanimed,salasõnad)
     elif vastus==2:
-        print("autoriseerimine")
+        print("Autoriseerimine")
         autoriseerimine(kasutajanimed,salasõnad)
     elif vastus==3:
-        print("nime või parooli muutmine")
-        vastus=input("Kas muudame nime või parooli ")
-        if vastus=="nime":
-            kasutajanimed=nime_või_parooli_muutmine(kasutajanimed)
+        print("Nime või parooli muutmine")
+        vastus=input("Kas muudame nime, parooli või mõlemad")
+        if vastus=="nimi":
+            kasutajanimed=nimi_või_parooli_muurmine(kasutajanimed)
         elif vastus=="parool":
-            salasõnad==nime_või_parooli_muutmine(salasõnad)
+            salasõnad=nimi_või_parooli_muurmine(salasõnad)
         elif vastus=="mõlemad":
             print("Nimi muutmine: ")
-            kasutajanimed=nime_või_parooli_muutmine(kasutajanimed)
-            print("Parooöi muutmine")
-            salasõnad==nime_või_parooli_muutmine(salasõnad)
+            kasutajanimed=nimi_või_parooli_muurmine(kasutajanimed)
+            print("Parooli muutmine: ")
+            salasõnad=nimi_või_parooli_muurmine(salasõnad)
     elif vastus==4:
-        print("unustanud üarooli taastamine")
-        print("Unustanud üarooli taastamine")
-        kasutajanimed,salasõnad,koodi_sõna = unustanud_üarooli_taastamine(kasutajanimed,salasõnad,koodi_sõna)
+        print("Unustanud parooli taastamine")
+
     elif vastus==5:
-        print("lõpetamine")
+        print("Lõpetamine")
         break
     else:
-        print("Tundmatu valik")  
-
+        print("Tundmatu valik")

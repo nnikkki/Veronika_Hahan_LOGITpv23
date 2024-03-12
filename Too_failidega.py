@@ -1,6 +1,6 @@
 from MinuOmaModul1 import *
 
-failide_kustamine()
+failide_kustutamine()
 
 ümber_kirjuta_fail(input("Faili nimi: "))
 
