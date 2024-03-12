@@ -63,6 +63,7 @@ def autoriseerimine(kasutajad:list,paroolid:list):
                         for i in range(10):
                             sleep(1)
                             print(f"On jäänud {10-i} sek")
+            break
         else:
             print("Kasutajat pole")
 def nimi_või_parooli_muurmine(list_:list):
@@ -109,4 +110,15 @@ def failide_kustutamine():
        print(f"Fail {failinimi} oli kustutatud")
     else:
         print(f"Fail {failinimi} puudub")
-def
+def loe_ankeet(fail:str)->any:
+    """
+    """
+    fail=open(fail,"r",encoding="utf-8")
+    kus=[]
+    vas=[]
+    for line in fail:
+        n=line.find(":")  #разделить
+        kus.append(line[0:n].strip())
+        vas.append(line[n+1:len(line)].strip())
+    fail.close()
+    return kus,vas
