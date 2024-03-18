@@ -14,7 +14,7 @@ while True:
            print("Tere tulemast viktoriinile!")
            nimi=input("Mis on sinu nimi? ")
            print("Tere", nimi)      
-           õigevastus=0
+           õigevastus=0  
            for rida in file:
                N=rida.split(":")
                print(N[0])
