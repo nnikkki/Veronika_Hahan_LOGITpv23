@@ -5,7 +5,7 @@ from email.message import EmailMessage
 import imghdr
 file = open("Ankeet.txt", "r", encoding='utf-8')
 kasutajanimed=[]
-salasõnad=[]
+salasõnad=[]  
 while True:
     print("1-Administraatori registreerimine\n2-Kasutaja\n3-Andiminstarot")
     vastus=int(input("Sisestage arv"))
