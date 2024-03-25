@@ -27,6 +27,7 @@
     <Compile Include="kasutamineF.py" />
     <Compile Include="MinuOmaModul.py" />
     <Compile Include="MinuOmaModul1.py" />
+    <Compile Include="module1.py" />
     <Compile Include="praktiine.py" />
     <Compile Include="Praktiine_töö.py" />
     <Compile Include="Too_failidega.py" />
@@ -36,6 +37,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Ankeet.txt" />
+    <Content Include="tulemusi.jpg" />
+    <Content Include="Tulemusi.txt" />
+    <Content Include="welcome.jpg" />
     <Content Include="Salasõna.txt" />
     <Content Include="Kasutajanimed.txt" />
     <Content Include="контрольная.py" />
