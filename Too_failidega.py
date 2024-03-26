@@ -50,6 +50,8 @@ while True:
                    msg['Subject']="Kirja teema"
                    msg['From']="Veronika Hahan" #Nimi ka saab kirjutada #Kellelt
                    msg['To']="dom1ntiy@gmail.com" #Kellele   marina.oleinik@tthk.ee
+                   with open("Tulemusi.txt", "r") as file:
+                       file.read()
                    with open("tulemusi.jpg",'rb') as fpilt:
                         pilt=fpilt.read()
                    msg.add_attachment(pilt,maintype='image',subtype=imghdr.what(None, pilt))

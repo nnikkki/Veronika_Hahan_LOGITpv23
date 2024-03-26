@@ -30,6 +30,7 @@
     <Compile Include="module1.py" />
     <Compile Include="praktiine.py" />
     <Compile Include="Praktiine_töö.py" />
+    <Compile Include="Tkinteri_kasutamine.py" />
     <Compile Include="Too_failidega.py" />
     <Compile Include="Valik_laused.py" />
     <Compile Include="Veronika_LOGITpv23.py" />
@@ -37,6 +38,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Ankeet.txt" />
+    <Content Include="iconn.ico" />
+    <Content Include="rabbit.png" />
     <Content Include="tulemusi.jpg" />
     <Content Include="Tulemusi.txt" />
     <Content Include="welcome.jpg" />
